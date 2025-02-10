@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅の予定</title>
+    <style>
+        /* 全体のデザイン */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #777;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #555;
+        }
+        p {
+            font-size: 16px;
+            color: #444;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* アクティビティリストのデザイン */
+        .activity-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .activity-item {
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 150px;
+        }
+
+        .activity-item img {
+            width: 100%;
+            height: 100px; /* ★画像の高さを統一★ */
+            object-fit: cover; /* ★画像の比率を崩さずにトリミング★ */
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .activity-item p {
+            margin: 8px 0 0;
+            font-weight: bold;
+        }
+
+        .activity-item a {
+            display: block; /* 画像全体をクリック可能にする */
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .activity-item a:hover img {
+            transform: scale(1.05); /* ホバー時に少し拡大してわかりやすく */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>1日目</h1>
+    <h3>有馬温泉</h3>
+    <p>食べ歩き</p>
+    <div class="activity-list">
+        <div class="activity-item">
+            <img src="1.jpg">
+        </div>
+        <div class="activity-item">
+            <img src="2.jpg">
+        </div>
+        <div class="activity-item">
+            <img src="3.jpg">
+        </div>
+        <div class="activity-item">
+            <img src="4.jpg">
+        </div>
+        <div class="activity-item">
+            <img src="5.jpg">
+        </div>
+        <div class="activity-item">
+            <img src="6.jpg">
+        </div>
+        <div class="activity-item">
+            <img src="7.jpg">
+        </div>
+        <div class="activity-item">
+            <img src="8.jpg">
+        </div>
+        <div class="activity-item">
+            <img src="9.jpg">
+        </div>
+    </div>
+
+    <p>移動１時間<br>ホテルチェックイン</p>
+
+    <h3>岩盤浴</h3>
+    <a href="https://nesta.co.jp/spa/sauna/">岩盤浴サイト</a><br>
+    <img src="yoku.jpg" alt="岩盤浴">
+    <p>晩ご飯(和洋ディナーブッフェ)<br>時間17:30~21:00まで</p>
+    <img src="ban.jpg" alt="晩ごはん">
+    <p>就寝</p>
+
+    <h1>2日目</h1>
+    <p>朝食（和洋モーニングブッフェ）<br>時間7:00~10:00</p>
+    <img src="asa.jpg" alt="朝ごはん">
+    <h3>ネスタリゾート</h3>
+
+
+    <!-- アクティビティリスト -->
+<!-- アクティビティリスト -->
+<div class="activity-list">
+    <div class="activity-item">
+        <a href="https://maizuru-smc.com/2379/" target="_blank">
+            <img src="sky.jpg" alt="スカイイーグル">
+        </a>
+        <p>スカイイーグル</p>
+    </div>
+    <div class="activity-item">
+        <a href="https://www.atpress.ne.jp/news/255816" target="_blank">
+            <img src="cani.jpg" alt="キャニオンドロップ">
+        </a>
+        <p>キャニオンドロップ</p>
+    </div>
+    <div class="activity-item">
+        <a href="https://nesta.co.jp/activity/canyon-slide/" target="_blank">
+            <img src="sura.jpg" alt="キャニオンスライド">
+        </a>
+        <p>キャニオンスライド</p>
+    </div>
+    <div class="activity-item">
+        <a href="https://nesta.co.jp/activity/gun-battle-the-real/" target="_blank">
+            <img src="gan.jpg" alt="ガンバトルザリアル">
+        </a>
+        <p>ガンバトルザリアル</p>
+    </div>
+    <div class="activity-item">
+        <a href="https://ttttan.hateblo.jp/entry/2020/04/16/231447" target="_blank">
+            <img src="ani.png" alt="アニマルフレンズ">
+        </a>
+        <p>アニマルフレンズ</p>
+    </div>
+    <div class="activity-item">
+        <a href="https://nesta.co.jp/activity/skyjungle/" target="_blank">
+            <img src="zya.jpg" alt="スカイジャングル">
+        </a>
+        <p>スカイジャングル</p>
+    </div>
+    <div class="activity-item">
+        <a href="https://nesta.co.jp/activity/wild-canoe/" target="_blank">
+            <img src="kanu.jpg" alt="ワイルドカヌー">
+        </a>
+        <p>ワイルドカヌー</p>
+    </div>
+    <div class="activity-item">
+        <a href="https://nesta.co.jp/activity/heroes/" target="_blank">
+            <img src="re.jpg" alt="レジェンドスポーツヒーローズ">
+        </a>
+        <p>レジェンドスポーツヒーローズ</p>
+    </div>
+</div>
+
+<p>※整理券のものもあるから先に取りに行くこと<br>特にガンバトル</p>
+
+
+    <h3>イルミネーション<br>18:00~22:00</h3>
+    <a href="https://nesta.co.jp/activity/illumination/">イルミネーションサイト</a>
+    <img src="irumi.jpg" alt="イルミネーション">
+
+</body>
+</html>
